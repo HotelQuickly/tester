@@ -79,7 +79,7 @@ if ($cmd->isEmpty() || $options['--help']) {
 	exit;
 }
 
-$phpArgs = '-n';
+$phpArgs = '';
 if ($options['-c']) {
 	$phpArgs .= ' -c ' . Tester\Helpers::escapeArg($options['-c']);
 } elseif (!$options['--info']) {
